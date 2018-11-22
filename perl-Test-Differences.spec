@@ -4,7 +4,7 @@
 #
 Name     : perl-Test-Differences
 Version  : 0.64
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.64.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.64.tar.gz
 Summary  : 'Test strings and data structures and show differences if not ok'
@@ -58,7 +58,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/Test/Differences.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Test/Differences.pm
 
 %files dev
 %defattr(-,root,root,-)
