@@ -4,7 +4,7 @@
 #
 Name     : perl-Test-Differences
 Version  : 0.67
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.67.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.67.tar.gz
 Summary  : Perl/CPAN Module Test::Differences
