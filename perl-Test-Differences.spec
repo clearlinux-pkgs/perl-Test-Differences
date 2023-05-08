@@ -5,7 +5,7 @@
 #
 Name     : perl-Test-Differences
 Version  : 0.69
-Release  : 34
+Release  : 35
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.69.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.69.tar.gz
 Summary  : 'Test strings and data structures and show differences if not ok'
