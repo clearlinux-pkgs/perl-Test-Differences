@@ -4,10 +4,10 @@
 # Using build pattern: cpan
 #
 Name     : perl-Test-Differences
-Version  : 0.69
-Release  : 35
-URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.69.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.69.tar.gz
+Version  : 0.70
+Release  : 36
+URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.70.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.70.tar.gz
 Summary  : 'Test strings and data structures and show differences if not ok'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
@@ -44,8 +44,11 @@ perl components for the perl-Test-Differences package.
 
 
 %prep
-%setup -q -n Test-Differences-0.69
-cd %{_builddir}/Test-Differences-0.69
+%setup -q -n Test-Differences-0.70
+cd %{_builddir}/Test-Differences-0.70
+pushd ..
+cp -a Test-Differences-0.70 buildavx2
+popd
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -71,6 +74,7 @@ find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
 find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %{_fixperms} %{buildroot}/*
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
