@@ -4,10 +4,10 @@
 # Using build pattern: cpan
 #
 Name     : perl-Test-Differences
-Version  : 0.70
-Release  : 37
-URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.70.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.70.tar.gz
+Version  : 0.71
+Release  : 38
+URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.71.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.71.tar.gz
 Summary  : 'Test strings and data structures and show differences if not ok'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
@@ -44,10 +44,10 @@ perl components for the perl-Test-Differences package.
 
 
 %prep
-%setup -q -n Test-Differences-0.70
-cd %{_builddir}/Test-Differences-0.70
+%setup -q -n Test-Differences-0.71
+cd %{_builddir}/Test-Differences-0.71
 pushd ..
-cp -a Test-Differences-0.70 buildavx2
+cp -a Test-Differences-0.71 buildavx2
 popd
 
 %build
